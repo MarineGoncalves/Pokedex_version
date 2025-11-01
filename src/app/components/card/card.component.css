@@ -1,0 +1,89 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: #1a1a1a; 
+  margin: 0;
+}
+
+
+.card {
+  border: 1px solid #333;
+  width: 320px;   
+  height: 420px;  
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(145deg, #7c7977, #706b6b);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* efeito hover */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+}
+
+/* Título */
+.card__title {
+  margin: 15px auto;
+}
+
+.card__title > h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+/* Corpo */
+.card__body {
+  background-color: #616161;
+  width: 90%;
+  margin: auto;
+  height: 65%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card__stats {
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.card__stats__type {
+  color: #000;
+  font-weight: bold;
+  background-color: coral;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+.search-input {
+  width: 100%;             
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #3d3d3d;
+  color: white;
+ 
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.search-input:focus {
+  background-color: #3d3d3d;
+}
